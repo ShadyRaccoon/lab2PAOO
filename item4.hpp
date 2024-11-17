@@ -4,7 +4,7 @@ class Business4{
     public:
         Business4();
         Business4(int angajati, int comenzi);
-        static int vanzari(int flag, int amenda = 0);
+        static int vanzari(int flag);
         int getAngajati();
         int getComenzi();
         void setAngajati(int n);

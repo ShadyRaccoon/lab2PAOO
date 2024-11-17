@@ -11,5 +11,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)	 
 # we request -std=c++14 in the compiler  flags instead of –std=gnu++14
 
-add_executable(${PROJECT_NAME} main.cpp item4.cpp item4.hpp item5.cpp item5.hpp item6.cpp item6.hpp)	
+add_executable(${PROJECT_NAME} main.cpp item4.cpp item4.hpp item4_1.hpp item4_1.cpp
+ item5.cpp item5.hpp item6.cpp item6.hpp)	
 #we can add headers into the executable definition

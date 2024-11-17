@@ -26,7 +26,7 @@ void Business4::setAngajati(int n){
     nrAngajati = n;
 }
 
-int Business4::vanzari(int flag, int amenda){
+int Business4::vanzari(int flag){
     static int vanzari = 0;
 
     switch(flag){
@@ -34,9 +34,6 @@ int Business4::vanzari(int flag, int amenda){
             vanzari += 100;
             break; 
         case 1:
-            vanzari += amenda;
-            break;
-        case 2:
             vanzari = 0;
             break;
         default:
