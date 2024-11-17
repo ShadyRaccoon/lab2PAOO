@@ -26,6 +26,11 @@ void Business4::setAngajati(int n){
     nrAngajati = n;
 }
 
+void Business4::plaseazaComanda(){
+    setComenzi(getComenzi() + 1);
+    vanzari(0);
+}
+
 int Business4::vanzari(int flag){
     static int vanzari = 0;
 

@@ -9,6 +9,7 @@ class Business4{
         int getComenzi();
         void setAngajati(int n);
         void setComenzi(int n); 
+        void plaseazaComanda();
     private:
         int nrAngajati;
         int nrComenzi;
