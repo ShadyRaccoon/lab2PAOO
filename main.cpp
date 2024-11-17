@@ -6,6 +6,7 @@
 #include "item6.hpp"
 
 void demoItem4();
+void demoItem5();
 
 int main(){
 
@@ -36,4 +37,14 @@ void demoItem4(){
 
     //prin folosirea metodelor care intorc valori statice se evita static init order fiasco
     std::cout << "TAXE DE PLATIT: " << IRS4::taxes();
+}
+
+void demoItem5(){
+    item5 obj1; //constructor
+    item5 obj2(obj1); //copy constructor
+    {
+        item5 obj3; //constructor
+        obj3 = obj2; //copy operator
+    } //destructor pentru opj3
+    //destructori pentru restul obiectelor out of scope
 }
