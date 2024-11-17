@@ -7,9 +7,12 @@
 
 void demoItem4();
 void demoItem5();
+void demoItem6();
 
 int main(){
-
+    demoItem4();
+    demoItem5();
+    demoItem6();
     return 0;
 }
 
@@ -27,8 +30,8 @@ void demoItem4(){
     //testare setters
     obj1.setAngajati(25);
     obj1.setComenzi(200);
-    std::cout << "ANGAJATI BUSINESS2 UPDATE: " << obj2.getAngajati()
-              << "| COMENZI BUSINESS2 UPDATE:" << obj2.getComenzi() << std::endl;
+    std::cout << "ANGAJATI BUSINESS1 UPDATE: " << obj1.getAngajati()
+              << "| COMENZI BUSINESS1 UPDATE:" << obj1.getComenzi() << std::endl;
 
     obj2.plaseazaComanda();
     std::cout << "ANGAJATI BUSINESS2 UPDATE: " << obj2.getAngajati()
@@ -36,7 +39,7 @@ void demoItem4(){
     std::cout << "VANZARI: " << Business4::vanzari(-1) << std::endl;
 
     //prin folosirea metodelor care intorc valori statice se evita static init order fiasco
-    std::cout << "TAXE DE PLATIT: " << IRS4::taxes();
+    std::cout << "TAXE DE PLATIT: " << IRS4::taxes() << std::endl;
 }
 
 void demoItem5(){
@@ -47,4 +50,8 @@ void demoItem5(){
         obj3 = obj2; //copy operator
     } //destructor pentru opj3
     //destructori pentru restul obiectelor out of scope
+}
+
+void demoItem6(){
+
 }

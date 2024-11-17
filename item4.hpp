@@ -1,3 +1,6 @@
+#ifndef ITEM4_HPP
+#define ITEM4_HPP
+
 #include <iostream>
 
 class Business4{
@@ -14,3 +17,5 @@ class Business4{
         int nrAngajati;
         int nrComenzi;
 };
+
+#endif
