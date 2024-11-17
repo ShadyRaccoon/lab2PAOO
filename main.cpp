@@ -52,6 +52,26 @@ void demoItem5(){
     //destructori pentru restul obiectelor out of scope
 }
 
-void demoItem6(){
 
+//ASTFEL TRANSFORMAM EROARE DE RUNTIME INTR-O EROARE DE COMPILARE
+void demoItem6(){
+    Inherit1 obj1;
+    //Inherit1 obj11(obj1);
+    // ------------> function "Inherit1::Inherit1(const Inherit1 &)" (declared implicitly) 
+    //               cannot be referenced -- it is a deleted function
+    // copy constructorul declarat privat ^
+    Inherit2 obj2;
+    Inherit2 obj21;
+
+    //obj21 = obj2;
+    // ------------> function "Inherit2::operator=(const Inherit2 &)" (declared implicitly) 
+    //               cannot be referenced -- it is a deleted function
+    // copy operator declarat privat ^
+
+    Necopiabil2 obj3;
+    Necopiabil2 obj32;
+    //Necopiabil2 obj31(obj3);
+    // ------------> "Necopiabil2::Necopiabil2(const Necopiabil2 &other)" 
+    //               (declared at line 15 of "/home/bogdan/Desktop/tema2paoo/item6.hpp") is inaccessible
+    //obj32 = obj3; //=> aceeasi problema
 }
